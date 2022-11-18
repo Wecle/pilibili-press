@@ -3,8 +3,11 @@
 # 确保脚本抛出遇到的错误
 set -e
 
+# 删除 dist 文件
+# rm -rf dist
+
 # 生成静态文件
-npm run docs:build
+yarn docs:build
 
 # 进入生成的文件夹
 cd docs/.vuepress/dist
